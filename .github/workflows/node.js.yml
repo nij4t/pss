@@ -28,5 +28,7 @@ jobs:
           git status
           git add screenshots
           git checkout -b screenshots
+          git config --global user.email "you@example.com"
+          git config --global user.name "Your Name"
           git commit -m 'update screenshot'
           git push origin screenshots
