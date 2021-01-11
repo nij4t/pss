@@ -24,5 +24,7 @@ jobs:
           url: https://github.com
       - name: push to branch
         run: |
-          git add .
-          git status
+          git checkout -b screenshots
+          git add screenshots/screenshot-*.jpg
+          git commit -m 'update screenshot'
+          git push origin screenshots
