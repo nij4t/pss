@@ -26,7 +26,7 @@ jobs:
         run: |
           set -x
           git status
-          git add screenshots/screenshot-*.jpg
+          git add screenshots
           git checkout -b screenshots
           git commit -m 'update screenshot'
           git push origin screenshots
